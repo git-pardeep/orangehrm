@@ -1,30 +1,41 @@
 package com.orangehrm.base;
 
+import java.io.FileInputStream;
+import java.io.IOException;
 import java.time.Duration;
+import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.BeforeSuite;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseClass {
 //	public static ThreadLocal<WebDriver> driver =new ThreadLocal<>();
 	public static WebDriver driver;
-	String Browser="chrome";
+//	String Browser="chrome";
+	public static Properties prop=new Properties();
+	public static FileInputStream fis;
+	@BeforeSuite
+	public void loadConfirg() throws IOException {
+		fis = new FileInputStream(System.getProperty("user.dir")+"\\testdata\\config.properties");
+		prop.load(fis);
+	}
 	
 	public void launchBrowser() {
 //		if (System.getProperty("Browser").equalsIgnoreCase("chrome")) {
-		if (Browser.equalsIgnoreCase("chrome")) {
+		if (prop.getProperty("Browser").equalsIgnoreCase("chrome")) {
 		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
 		}
-		if (Browser.equalsIgnoreCase("edge")) {
+		if (prop.getProperty("Browser").equalsIgnoreCase("edge")) {
 			WebDriverManager.edgedriver().setup();
 			driver = new EdgeDriver();
 			}
-		if (Browser.equalsIgnoreCase("firefox")) {
+		if (prop.getProperty("Browser").equalsIgnoreCase("firefox")) {
 			WebDriverManager.firefoxdriver().setup();
 			driver = new FirefoxDriver();
 			}
