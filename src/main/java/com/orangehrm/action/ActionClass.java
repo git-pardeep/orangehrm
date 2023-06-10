@@ -12,7 +12,7 @@ import com.orangehrm.base.BaseClass;
 public class ActionClass extends BaseClass{
 	
 	public void explicitlyWait(WebElement ele) {
-		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(30));
+		WebDriverWait wait = new WebDriverWait(getDriver(),Duration.ofSeconds(30));
 		wait.until(ExpectedConditions.elementToBeClickable(ele));
 	}
 	public void sendKeys(WebElement ele, String text) {

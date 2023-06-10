@@ -16,7 +16,7 @@ public class IndexPage extends BaseClass {
 	@FindBy(xpath="//button[@type='submit']")
 	private WebElement clickbtn;
 	public IndexPage() {
-		PageFactory.initElements(driver, this);
+		PageFactory.initElements(getDriver(), this);
 	}
 
 	public void login() throws InterruptedException {
