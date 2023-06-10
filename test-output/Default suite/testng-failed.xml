@@ -8,8 +8,7 @@
           <include name="tearDown"/>
           <include name="setUp"/>
           <include name="indexPage"/>
-          <include name="closeBrowser"/>
-          <include name="launchBrowser"/>
+          <include name="loadConfirg"/>
         </methods>
       </class> <!-- com.orangehrm.testcases.IndexPageTest -->
     </classes>
