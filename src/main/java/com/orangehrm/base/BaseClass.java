@@ -19,6 +19,7 @@ public class BaseClass {
 //	String Browser="chrome";
 	public static Properties prop=new Properties();
 	public static FileInputStream fis;
+
 	@BeforeSuite
 	public void loadConfirg() throws IOException {
 		fis = new FileInputStream(System.getProperty("user.dir")+"\\testdata\\config.properties");
