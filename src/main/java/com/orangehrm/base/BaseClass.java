@@ -5,12 +5,15 @@ import java.io.IOException;
 import java.time.Duration;
 import java.util.Properties;
 
+import org.apache.log4j.xml.DOMConfigurator;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.BeforeSuite;
+
+import com.orangehrm.utilities.Log;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -22,6 +25,7 @@ public class BaseClass {
 
 	@BeforeSuite
 	public void loadConfirg() throws IOException {
+		DOMConfigurator.configure("Log4j.xml");
 		fis = new FileInputStream(System.getProperty("user.dir")+"\\testdata\\config.properties");
 		prop.load(fis);
 	}
@@ -30,9 +34,11 @@ public class BaseClass {
 	}
 	public void launchBrowser() {
 //		if (System.getProperty("Browser").equalsIgnoreCase("chrome")) {
+		
 		if (prop.getProperty("Browser").equalsIgnoreCase("chrome")) {
 		WebDriverManager.chromedriver().setup();
 		driver.set( new ChromeDriver());
+		Log.info("Chrome launch browser");
 		}
 		if (prop.getProperty("Browser").equalsIgnoreCase("edge")) {
 			WebDriverManager.edgedriver().setup();
@@ -48,6 +54,7 @@ public class BaseClass {
 	}
 
 	public void closeBrowser() {
+		
 		getDriver().close();
 	}
 
