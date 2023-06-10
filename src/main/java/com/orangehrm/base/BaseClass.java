@@ -13,7 +13,7 @@ public class BaseClass {
 //	public static ThreadLocal<WebDriver> driver =new ThreadLocal<>();
 	public static WebDriver driver;
 
-	@BeforeSuite
+	
 	public void launchBrowser() {
 		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
@@ -22,7 +22,6 @@ public class BaseClass {
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30));
 	}
 
-	@AfterSuite
 	public void closeBrowser() {
 		driver.close();
 	}
