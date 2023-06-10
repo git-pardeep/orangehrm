@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-06-10T08:56:38 IST" name="Suite" finished-at="2023-06-10T08:56:51 IST" duration-ms="12746">
+  <suite started-at="2023-06-10T10:02:28 IST" name="Suite" finished-at="2023-06-10T10:02:39 IST" duration-ms="10245">
     <groups>
     </groups>
-    <test started-at="2023-06-10T08:56:38 IST" name="Test" finished-at="2023-06-10T08:56:51 IST" duration-ms="12746">
+    <test started-at="2023-06-10T10:02:28 IST" name="Test" finished-at="2023-06-10T10:02:39 IST" duration-ms="10245">
       <class name="com.orangehrm.testcases.IndexPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.orangehrm.testcases.IndexPageTest@f5ac9e4]" started-at="2023-06-10T08:56:38 IST" name="setUp" finished-at="2023-06-10T08:56:47 IST" duration-ms="8679" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.orangehrm.testcases.IndexPageTest@f5ac9e4]" started-at="2023-06-10T10:02:28 IST" name="setUp" finished-at="2023-06-10T10:02:35 IST" duration-ms="6867" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="indexPage()[pri:0, instance:com.orangehrm.testcases.IndexPageTest@f5ac9e4]" started-at="2023-06-10T08:56:47 IST" name="indexPage" finished-at="2023-06-10T08:56:51 IST" duration-ms="3802" status="FAIL">
+        <test-method signature="indexPage()[pri:0, instance:com.orangehrm.testcases.IndexPageTest@f5ac9e4]" started-at="2023-06-10T10:02:35 IST" name="indexPage" finished-at="2023-06-10T10:02:38 IST" duration-ms="3100" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//button[@type='submit']"}
@@ -20,9 +20,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.10.0', revision: 'c14d967899'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [ee35e5397c084fc7430f029c7b6e6a1a, findElement {using=xpath, value=//button[@type='submit']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51023}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51023/devtoo..., se:cdpVersion: 114.0.5735.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: ee35e5397c084fc7430f029c7b6e6a1a]]>
+Command: [61af4abebf6e109ed4a2e9c5b40aa631, findElement {using=xpath, value=//button[@type='submit']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52989}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52989/devtoo..., se:cdpVersion: 114.0.5735.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 61af4abebf6e109ed4a2e9c5b40aa631]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[@type='submit']"}
@@ -31,9 +31,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.10.0', revision: 'c14d967899'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [ee35e5397c084fc7430f029c7b6e6a1a, findElement {using=xpath, value=//button[@type='submit']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51023}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51023/devtoo..., se:cdpVersion: 114.0.5735.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: ee35e5397c084fc7430f029c7b6e6a1a
+Command: [61af4abebf6e109ed4a2e9c5b40aa631, findElement {using=xpath, value=//button[@type='submit']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52989}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52989/devtoo..., se:cdpVersion: 114.0.5735.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 61af4abebf6e109ed4a2e9c5b40aa631
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -89,7 +89,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- indexPage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orangehrm.testcases.IndexPageTest@f5ac9e4]" started-at="2023-06-10T08:56:51 IST" name="tearDown" finished-at="2023-06-10T08:56:51 IST" duration-ms="212" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orangehrm.testcases.IndexPageTest@f5ac9e4]" started-at="2023-06-10T10:02:38 IST" name="tearDown" finished-at="2023-06-10T10:02:39 IST" duration-ms="228" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

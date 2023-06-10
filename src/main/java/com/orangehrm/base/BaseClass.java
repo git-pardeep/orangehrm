@@ -12,18 +12,19 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class BaseClass {
 //	public static ThreadLocal<WebDriver> driver =new ThreadLocal<>();
 	public static WebDriver driver;
-
+	String Browser="chrome";
 	
 	public void launchBrowser() {
-		if (System.getProperty("Browser").equalsIgnoreCase("chrome")) {
+//		if (System.getProperty("Browser").equalsIgnoreCase("chrome")) {
+		if (Browser.equalsIgnoreCase("chrome")) {
 		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
 		}
-		if (System.getProperty("Browser").equalsIgnoreCase("edge")) {
+		if (Browser.equalsIgnoreCase("edge")) {
 			WebDriverManager.edgedriver().setup();
 			driver = new EdgeDriver();
 			}
-		if (System.getProperty("Browser").equalsIgnoreCase("firefox")) {
+		if (Browser.equalsIgnoreCase("firefox")) {
 			WebDriverManager.firefoxdriver().setup();
 			driver = new FirefoxDriver();
 			}

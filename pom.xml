@@ -55,9 +55,7 @@
 					<suiteXmlFiles>
 						<suiteXmlFile>${xmlFiles}</suiteXmlFile>
 					</suiteXmlFiles>
-					<systemPropertyVariables>
-						<executionBrowser>${Browser} </executionBrowser>
-					</systemPropertyVariables>
+		
 				</configuration>
 			</plugin>
 		</plugins>
