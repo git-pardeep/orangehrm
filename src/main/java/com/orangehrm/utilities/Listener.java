@@ -36,7 +36,7 @@ public class Listener extends ExtentManager implements ITestListener {
 		String timestamp=date.toString().replace(":","-").replace(" ","-");
 		File screenshot=((TakesScreenshot)BaseClass.getDriver()).getScreenshotAs(OutputType.FILE);
 		try {
-			FileUtils.copyFile(screenshot,new File(".\\Screenshot\\"+timestamp+ " " +result.getName()+".png"));
+			FileUtils.copyFile(screenshot,new File("http://localhost:8082/job/orangeHRM/ws/Screenshot/"+timestamp+ " " +result.getName()+".png"));
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
