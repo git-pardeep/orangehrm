@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-06-10T15:23:21 IST" name="Default suite" finished-at="2023-06-10T15:23:30 IST" duration-ms="9362">
+  <suite started-at="2023-06-13T02:23:33 IST" name="Suite" finished-at="2023-06-13T02:24:00 IST" duration-ms="26208">
     <groups>
     </groups>
-    <test started-at="2023-06-10T15:23:21 IST" name="Default test" finished-at="2023-06-10T15:23:30 IST" duration-ms="9362">
+    <test started-at="2023-06-13T02:23:33 IST" name="Test" finished-at="2023-06-13T02:24:00 IST" duration-ms="26208">
       <class name="com.orangehrm.testcases.IndexPageTest">
-        <test-method is-config="true" signature="loadConfirg()[pri:0, instance:com.orangehrm.testcases.IndexPageTest@7e07db1f]" started-at="2023-06-10T15:23:21 IST" name="loadConfirg" finished-at="2023-06-10T15:23:21 IST" duration-ms="319" status="PASS">
+        <test-method is-config="true" signature="loadConfirg()[pri:0, instance:com.orangehrm.testcases.IndexPageTest@7c1e2a9e]" started-at="2023-06-13T02:23:33 IST" name="loadConfirg" finished-at="2023-06-13T02:23:33 IST" duration-ms="496" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loadConfirg -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.orangehrm.testcases.IndexPageTest@7e07db1f]" started-at="2023-06-10T15:23:21 IST" name="setUp" finished-at="2023-06-10T15:23:27 IST" duration-ms="5894" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.orangehrm.testcases.IndexPageTest@7c1e2a9e]" started-at="2023-06-13T02:23:34 IST" name="setUp" finished-at="2023-06-13T02:23:55 IST" duration-ms="21373" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="indexPage()[pri:0, instance:com.orangehrm.testcases.IndexPageTest@7e07db1f]" started-at="2023-06-10T15:23:27 IST" name="indexPage" finished-at="2023-06-10T15:23:30 IST" duration-ms="3109" status="FAIL">
+        <test-method signature="indexPage()[pri:0, instance:com.orangehrm.testcases.IndexPageTest@7c1e2a9e]" started-at="2023-06-13T02:23:55 IST" name="indexPage" finished-at="2023-06-13T02:23:59 IST" duration-ms="3905" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//button[@type='submit']"}
@@ -24,9 +24,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.10.0', revision: 'c14d967899'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [ee9606113b4b82665c21ec445ad56fd7, findElement {using=xpath, value=//button[@type='submit']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57383}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57383/devtoo..., se:cdpVersion: 114.0.5735.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: ee9606113b4b82665c21ec445ad56fd7]]>
+Command: [ca8b0d9709abd76a1ca688f711b38e0c, findElement {using=xpath, value=//button[@type='submit']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49540}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49540/devtoo..., se:cdpVersion: 114.0.5735.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ca8b0d9709abd76a1ca688f711b38e0c]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[@type='submit']"}
@@ -35,9 +35,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.10.0', revision: 'c14d967899'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [ee9606113b4b82665c21ec445ad56fd7, findElement {using=xpath, value=//button[@type='submit']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57383}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57383/devtoo..., se:cdpVersion: 114.0.5735.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: ee9606113b4b82665c21ec445ad56fd7
+Command: [ca8b0d9709abd76a1ca688f711b38e0c, findElement {using=xpath, value=//button[@type='submit']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49540}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49540/devtoo..., se:cdpVersion: 114.0.5735.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ca8b0d9709abd76a1ca688f711b38e0c
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -93,15 +93,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- indexPage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orangehrm.testcases.IndexPageTest@7e07db1f]" started-at="2023-06-10T15:23:30 IST" name="tearDown" finished-at="2023-06-10T15:23:30 IST" duration-ms="312" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orangehrm.testcases.IndexPageTest@7c1e2a9e]" started-at="2023-06-13T02:23:59 IST" name="tearDown" finished-at="2023-06-13T02:24:00 IST" duration-ms="339" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.orangehrm.testcases.IndexPageTest@7e07db1f]" started-at="2023-06-10T15:23:30 IST" name="closeBrowser" finished-at="2023-06-10T15:23:31 IST" duration-ms="649" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.orangehrm.testcases.IndexPageTest@7c1e2a9e]" started-at="2023-06-13T02:24:00 IST" name="closeBrowser" finished-at="2023-06-13T02:24:01 IST" duration-ms="875" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- com.orangehrm.testcases.IndexPageTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
